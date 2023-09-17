@@ -1,8 +1,8 @@
 # SiamMask ONNX Demo
 
-<div>
-    <video src="./assets/car_example.mp4">
-    <video src="./assets/tennis_example.mp4">
+<div style="margin-left: auto; margin-right: auto; width: 1000px">
+    <img src="./assets/car_thumb.png" style="width: 300px; height: 175px"/>
+    <img src="./assets/tennis_thumb.png" style="width: 300px; height: 175px">
 </div>
 
 **[Code source for this blog post]()**
