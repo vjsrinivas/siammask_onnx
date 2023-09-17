@@ -11,6 +11,10 @@
     <a href="./assets/tennis_example.mp4">Video</a>
 </div>
 
+## Changelogs
+
+* September 17 2023 - Initial release of SiamMask + Refinement module trained on VOT18 [(release v1.0.0)](https://github.com/vjsrinivas/siammask_onnx/releases/download/v1.0.0/siammask_resnet50_refine_vot18_ort.onnx)
+
 ## Usage
 
 There are three main files that help export the official SiamMask repoistory to ONNX and visualize it via a video or webcam. Before running these files, make sure you have all the prerequisites for the [official SiamMask git repo](https://github.com/foolwood/SiamMask). Afterwards, install this project's requirement: `pip install requirements.txt`
