@@ -210,8 +210,9 @@ class WrapperCustom(nn.Module):
         self.update(hyp, self.model.anchors)
         self.renew()
 
-        self.window = torch.Tensor(np.outer(np.hanning(self.score_size), np.hanning(self.score_size))).to(device)
-        self.window = torch.Tensor(torch.tile(self.window.flatten(), (self.anchor_num,) )) 
+        self.window = torch.Tensor(np.outer(np.hanning(self.score_size), np.hanning(self.score_size)))
+        self.window = torch.Tensor(torch.tile(self.window.flatten(), (self.anchor_num,) )).to(device)
+        
         self.device = device
         self.target_sz = torch.Tensor(target_sz)
         wc_z = target_sz[0] + self.context_amount * sum(target_sz)
